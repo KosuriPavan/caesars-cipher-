@@ -38,7 +38,7 @@ encodedStr=encodedStr.toUpperCase();
 		if(lookup[encodedStr[i]]!= undefined)
 			decodedArr = push(lookup[encodedStr[i]]);
 		else
-			decodedArr = push(encodedStr.[i]);
+			decodedArr = push(encodedStr[i]);
 	}
   
   return decodedArr.join(''); //return decodedArr
