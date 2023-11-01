@@ -32,19 +32,16 @@ const lookup = {
 };
 
 function rot13(encodedStr) {
-	encodedStr=encodedStr.toUpperCase();
-  let decodedArr = ""; // Your Result goes here
-  // Only change code below this line
+encodedStr=encodedStr.toUpperCase();
+  let decodedArr = []; // Your Result goes here
 	for (let i = 0; i < encodedStr.length; i++) {
-		if (encodedStr[i]) {
-			decodedArr += lookup[encodedStr[i]];	
-		}
-		else {
-			decodedArr += encodedStr[i];
-		}
-		
-		}
-  return decodedArr; //return decodedArr
+		if(lookup[encodedStr[i]]!= undefined)
+			decodedArr = push(lookup[encodedStr[i]]);
+		else
+			decodedArr = push(encodedStr.[i]);
+	}
+  
+  return decodedArr.join(''); //return decodedArr
 }
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
