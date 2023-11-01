@@ -37,7 +37,7 @@ encodedStr=encodedStr.toUpperCase();
   // Only change code below this line
 	for (let i = 0; i < encodedStr.length; i++) {
 		if (encodedStr[i]) {
-			decodedArr += lookup[encodedStr[i]];	
+			decodedArr.push(lookup[encodedStr[i]]);
 		}
 		else {
 			decodedArr += encodedStr[i];
