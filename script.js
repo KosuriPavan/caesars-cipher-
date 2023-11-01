@@ -36,7 +36,7 @@ encodedStr=encodedStr.toUpperCase();
   let decodedArr = []; // Your Result goes here
   // Only change code below this line
 	for (let i = 0; i < encodedStr.length; i++) {
-		if (encodedStr[i] != undefined) {
+		if (encodedStr[i]) {
 			decodedArr += lookup[encodedStr[i]];	
 		}
 		else {
